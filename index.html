@@ -23,15 +23,20 @@
         
         <header>
             <img src="assets/bueno-avatar.png" alt="Foto de rosto de Bueno">
-            <h1>Bueno Nepomuceno</h1>
-            <h3>Desenvolvedor de Software</h3>
+            <h1 id="nome-perfil">Bueno Nepomuceno</h1>
+            <h3 id="eventoSubtitulo">Desenvolvedor de Software</h3>
+            <button onclick="manipularElementos()">Selecionar</button>
+            <button onclick="navegarEManipularDOM()">Navegar</button>
+            <button onclick="manipularElementosComMetodosDOM()">Manipular</button>
+            <button onclick="manipularEstilos()">Estilizar</button>
+            <button id="eventoBotao">Eventos</button>
         </header>
 
         <nav>
             <ul>
-                <li><a href="#">Currículo</a></li>
-                <li><a href="pages/portfolio.html">Portfólio</a></li>
-                <li><a href="pages/contato.html">Contato</a></li>
+                <li class="button"><a href="#">Currículo</a></li>
+                <li class="button"><a href="pages/portfolio.html">Portfólio</a></li>
+                <li class="button"><a href="pages/contato.html">Contato</a></li>
             </ul>
         </nav>
 
@@ -60,5 +65,11 @@
 
         <footer>Desenvolvido com amor por Bueno Nepomuceno S2</footer>
 
+        <script src="scripts/script.js"></script>
+        <script>
+            window.onload = function() {
+                manipularEventos();
+            }
+        </script>
     </body>
 </html>
